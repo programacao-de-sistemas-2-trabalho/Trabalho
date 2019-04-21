@@ -1,3 +1,5 @@
+package time;
+
 public class Time {
    private long id;
    private String nome;
@@ -44,6 +46,11 @@ public class Time {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+
+    int getAno() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 
 }
+
