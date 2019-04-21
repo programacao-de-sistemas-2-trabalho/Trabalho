@@ -1,8 +1,13 @@
+package aplicativo;
+
+import java.util.List;
+
 public class Aplicativo {
     private long id;
     private String nome;
     private String desenvolvedor;
     private int numerodowloads;
+    private List<Aplicativo> aplicativo;
 
     public long getId() {
         return id;
@@ -35,4 +40,11 @@ public class Aplicativo {
     public void setNumerodowloads(int numerodowloads) {
         this.numerodowloads = numerodowloads;
     }
+
+    String getDesemvolvedor() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public List<Aplicativo> getAplicativo() {
+        return this.aplicativo;
+      }
 }
