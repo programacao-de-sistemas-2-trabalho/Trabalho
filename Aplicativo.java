@@ -8,6 +8,16 @@ public class Aplicativo {
     private String desenvolvedor;
     private int numerodowloads;
     private List<Aplicativo> aplicativo;
+    
+    public Aplicativo(){}
+    
+    public Aplicativo(long id, String nome, String desenvolvedor, int numerodownloads){
+        this.id = id;
+        this.nome = nome;
+        this.desenvolvedor = desenvolvedor;
+        this.numerodowloads = numerodownloads;
+                
+    }
 
     public long getId() {
         return id;
@@ -41,10 +51,12 @@ public class Aplicativo {
         this.numerodowloads = numerodowloads;
     }
 
-    String getDesemvolvedor() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    @Override
+   public String toString() {
+        return "Aplicativo: " 
+                + this.nome + " - " 
+                + this.desenvolvedor + " (" 
+                + this.numerodowloads + ")";
     }
-    public List<Aplicativo> getAplicativo() {
-        return this.aplicativo;
-      }
+ 
 }
